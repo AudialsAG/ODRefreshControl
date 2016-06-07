@@ -104,6 +104,10 @@ static inline CGFloat lerp(CGFloat a, CGFloat b, CGFloat p)
     return self;
 }
 
+- (void)setArrowColor:(UIColor *)color {
+    _arrowLayer.fillColor = [color CGColor];
+}
+
 - (void)dealloc
 {
     [self.scrollView removeObserver:self forKeyPath:@"contentOffset"];
