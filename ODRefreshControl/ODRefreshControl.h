@@ -48,4 +48,6 @@
 // Tells the control the refresh operation has ended
 - (void)endRefreshing;
 
+- (void)setArrowColor:(UIColor *)color;
+
 @end
